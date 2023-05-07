@@ -1,0 +1,135 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    background: url(../asssets/images/images-decorate/pattern-inner.png) no-repeat fixed;
+    /* background-attachment: fixed; */
+    background-size: 400px;
+}
+:root{
+    --main-color: #fd8070;
+}
+/* Start global Style */
+.main-title{
+    position: relative;
+    margin-left: 60px;
+}
+.main-title::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+.main__btn{
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+/* End global Style */
+/* Start navbar */
+.navbar .navbar-brand img{
+    width: 40px;
+}
+/* End navbar */
+/* Start Home */
+.home__content{
+    background: url(../asssets/images/Home/bg-home.png) no-repeat 100% 100%;
+}
+.home__content h3{
+    letter-spacing: 5px;
+}
+.home__content p{
+    font-size: 47px;
+    font-weight: bold;
+}
+.home__content a{
+    color: var(--main-color);
+    background-color: #fff;
+}
+.home__content a:hover{
+    background-color: #fff;
+}
+/* End Home */
+/* Start About */
+.about__lift img{
+    width: calc(100% - 30%);
+}
+.about__right a{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.about__right a:hover{
+    background-color: #ff7562;
+    color: #fff;
+    box-shadow: 3px 3px 5px #c9c9c9, -3px -3px 5px #d0d0d0;
+}
+/* ENd About */
+/* Start services */
+.services__content{
+    background: url(../asssets/images/images-decorate/pattern-inner.png) no-repeat bottom left;
+    background-size: 270px;
+}
+.service__left-icon{
+    background-color: #ff7b6a20;
+    width: 65px;
+    height: 65px;
+}
+.service__left-icon {
+    color: var(--main-color); 
+}
+/* ENd services */
+/* Start Portfolio */
+.portfolio__images swiper-slide img {
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+  } 
+  .portfolio__images swiper-slide{
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .portfolio__images swiper-slide:hover::before{
+    display: block;
+  }
+  .portfolio__images swiper-slide:hover img{
+    transform:scale(1.1);
+  }
+  .portfolio__images swiper-slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000ac;
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  }
+/* End portfolio */
+/* Start Testimonial */
+.testimonial p:nth-child(2){
+    color: var(--main-color);
+}
+.testimonial__content p:last-child{
+    background: url(../asssets/images/images-decorate/quote-icon1.svg) no-repeat right bottom;
+    background-size: 100px;
+}
+.testimonial{
+    background: url(../asssets/images/images-decorate/quote-icon1.svg) no-repeat left top;
+    background-size: 100px;
+}
+/* End Testimonial */
+/* Start Contact */
+.contact__content textarea{
+    height: 170px;
+}
+.contact__content input[type="submit"]{
+    background-color: var(--main-color);
+    
+}
+/* End Contact */
